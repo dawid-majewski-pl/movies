@@ -11859,9 +11859,21 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@keyframes push {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 :root {
   --primary-color-dark: #1b1b1b;
   --primary-color-light: #e0e0e0;
+  --active__color: #85c3fd;
 }
 
 body {
@@ -11870,7 +11882,7 @@ body {
 }
 
 .header {
-  z-index: 2;
+  z-index: 5;
 }
 
 .cover {
@@ -11913,6 +11925,51 @@ body {
   width: auto;
   height: auto;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.header__link {
+  color: white;
+  transition: 0.3s;
+}
+
+.header__link:hover {
+  color: var(--active__color);
+}
+
+.header__button:active > .header__arrow {
+  animation: push 0.2s ease-out;
+}
+
+.header__arrow, .header__text {
+  transition: 0.3s;
+}
+
+.header__button:hover > .header__arrow, .header__button:hover > .header__text {
+  color: var(--active__color);
+}
+
+.navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navigation__list {
+  margin-top: 64px;
+  flex-wrap: wrap;
+}
+
+.navigation__link {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navigation__link:hover {
+  color: var(--active__color);
 }
 
 /*# sourceMappingURL=main.css.map */
