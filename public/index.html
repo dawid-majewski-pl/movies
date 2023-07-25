@@ -9,17 +9,36 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header p-3 position-absolute start-0 top-0 end-0 bg-black">
+    <header class="header p-3 position-absolute start-0 top-0 end-0">
         <div class="d-flex justify-content-between align-items-center">
-            <a href="/" class="text-decoration-none fs-5 fw-bold text-white">Create Cool Movies</a>
+            <a href="/" class="text-shadow text-decoration-none fs-5 text-white">Create Cool Movies</a>
             <div>
                 <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                     <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
                         <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z"/>
-                      </svg><span class="ps-1">MENU</span>
+                      </svg><span class="text-shadow ps-1">MENU</span>
                 </button>
             </div>
         </div>
     </header>
+
+    <!-- Cover section -->
+    <section class="cover">
+        <div class="cover__overlay">
+        </div>
+        <video autoplay muted loop loading="lazy" class="cover__video">
+            <source src="/public/assets/videos/camera.mp4" type="video/mp4">
+        </video>
+        <div class="cover__content h-100 container-xl position-relative">
+            <div class="d-flex h-100 align-items-center ms-3">
+                <div>
+                    <h1 class="text-shadow display-3 mb-4">Create Cool Movies</h1>
+                    <p class="cover__paragraph text-shadow mb-4 ms-1">Our platform can help you make beautiful video clips, movies and visual arts.</p>
+                    <a href="/" class="mt-2 ms-1 btn btn-lg btn-outline-light" role="button">See programs</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </body>
 </html>

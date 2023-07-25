@@ -11869,9 +11869,50 @@ body {
   color: var(--primary-color-dark);
 }
 
-header {
-  color: var(--primary-color-light);
+.header {
   z-index: 2;
+}
+
+.cover {
+  position: relative;
+  height: 100vh;
+  background-color: var(--primary-color-dark);
+  overflow: hidden;
+}
+
+.cover__content {
+  z-index: 1;
+  color: var(--primary-color-light);
+}
+
+.cover__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}
+
+.cover__paragraph {
+  max-width: 80vw;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+.cover__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 /*# sourceMappingURL=main.css.map */
