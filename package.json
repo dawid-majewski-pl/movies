@@ -1,0 +1,30 @@
+{
+  "name": "movies",
+  "version": "1.0.0",
+  "description": "website about making movies.",
+  "main": "index.js",
+  "scripts": {
+    "sass-watch": "sass --watch src/main.scss public/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawid-majewski-pl/movies.git"
+  },
+  "keywords": [
+    "movies",
+    "videos",
+    "montage",
+    "making",
+    "clips"
+  ],
+  "author": "Dawid Majewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawid-majewski-pl/movies/issues"
+  },
+  "homepage": "https://github.com/dawid-majewski-pl/movies#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "sass": "^1.64.1"
+  }
+}
