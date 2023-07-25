@@ -11972,4 +11972,24 @@ body {
   color: var(--active__color);
 }
 
+.programs {
+  height: 100vh;
+}
+
+.programs__photo {
+  width: 360px;
+  height: 640px;
+}
+
+.card__description {
+  align-self: center;
+}
+.card__description--right {
+  text-align: right;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
 /*# sourceMappingURL=main.css.map */
